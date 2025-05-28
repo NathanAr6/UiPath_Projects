@@ -1,0 +1,56 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "files&Sequence_19",
+        "pathFolder&Sequence_1",
+        "pathInput&Sequence_1",
+        "pathFiles&Sequence_1",
+        "sendData&Sequence_1",
+        "DTInputsRaw&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "tableau.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "tempEmail&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "DTInputs"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SendEmail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "files&Sequence_1",
+        "files64&Sequence_1",
+        "MailBody&Sequence_1",
+        "i&Sequence_1",
+        "pass&Sequence_1",
+        "tempPil&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "DTInputs"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

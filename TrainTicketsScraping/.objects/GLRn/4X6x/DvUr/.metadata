@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Open the Chrome browser",
+  "Type": "Screen",
+  "Id": "DvUr9eFXZUGEzZsYtt03dg",
+  "Reference": "87odXQLrZk-5SS_9CqkmTg/DvUr9eFXZUGEzZsYtt03dg",
+  "ParentRef": "87odXQLrZk-5SS_9CqkmTg/4X6x-irDlkOivOQK19PMhw",
+  "Created": "2025-04-07T14:19:35.0901986Z",
+  "Updated": "2025-04-07T14:19:35.0901986Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

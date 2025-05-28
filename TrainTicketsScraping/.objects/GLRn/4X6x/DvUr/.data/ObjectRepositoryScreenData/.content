@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="u9GFe6-iIUeNWaATCVmzSw" Reference="87odXQLrZk-5SS_9CqkmTg/DvUr9eFXZUGEzZsYtt03dg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-11, -11, 1942, 1150" BrowserType="Chrome" ContentHash="NPmlgJyI9EKe5ElfKFB1tA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFUSURBVDhPtdHNK0RRGMfxaygb7iXj4g4pO5spC6EsLO6CbCz9AV7+ABsLQkrKwsIsLCZGWdj6B7C0ItP1kpeamYUUG3krFsf3HM9VlyYm+dWnzsvznNO51/rXJDIFG8NIytLvQ1M7tvGAflmOhPWYDKNhowF7UHhGn6yXoV7PMYFR0/A1bPh4gT7gqSmd8+PLFx2Ml3Ake1l0Sks0bHTjHvqAV3su2K1ZOLmRuXYNX8q/h804DqRY2bOBcuaPw2b9pHEptSyPd8nwM4lMXr910zRsFFTt4pk5RA5IoVJKzW0O9IdpwySm0YMdmAPclUtVPRMoby2/z7xZWj9Ckb6tAi7GcA79695gbvXSOf2ERzd1NSRtxUPDAO7C5hDNh1VT2TopKx6KyzGILZwi/Bu36JWyn0OxflYjujCCdayiVUpKC40xtCAJR5ZLD83mo8v0r7Gsd90a8Y4Kz/U4AAAAAElFTkSuQmCC" Reference="87odXQLrZk-5SS_9CqkmTg/DvUr9eFXZUGEzZsYtt03dg" Selector="&lt;html app='chrome.exe' title='traveloka.com/en-id/kereta-api/search?st=YK.JKT-A&amp;amp;dt=17-4-2025.null&amp;amp;ps=1.0&amp;amp;pd=KAI' /&gt;" Url="[FullUrl]" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="93b26ba4726875ecfd6d6ed4ba19ca8d.jpg" xmlns="">0PD54eyq3eE2Y99z9dLFMCQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

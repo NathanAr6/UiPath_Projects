@@ -1,0 +1,8 @@
+<p>Dear {company},<br><br>
+
+My name is Y from X Company. Attached is your company's performance report for April 2024. I am open for further discussion.
+
+Thank you.<br><br>
+
+Best Regards,<br>
+Y<br>
