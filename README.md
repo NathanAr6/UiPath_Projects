@@ -18,5 +18,5 @@ After downloaded, the file will be send automatically to email in [input files](
 ## TrainTicketScraping
 Scrape train tickets from Traveloka to get every train schedule, price, type, and seats availability. We need to enter the origin and destination station code and the departure date. 
 
-https://github.com/user-attachments/assets/234a005e-6f4c-43a1-9a89-b5fbdb1e5a17
+https://github.com/user-attachments/assets/c58b15d4-dbb3-4dae-828d-45e95cb23959
 
