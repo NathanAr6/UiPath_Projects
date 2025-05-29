@@ -237,7 +237,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="674,2890.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="848.6666666666666,1332" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="excelData" />
       <Variable x:TypeArguments="sd:DataTable" Name="csvData" />
@@ -249,7 +249,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:DeleteFileX sap2010:Annotation.AnnotationText="Deletes Sales Results file for development purposes." DisplayName="Delete  Sales Results File" sap:VirtualizedContainerService.HintSize="674,144.66666666666666" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="Merged.xlsx">
+    <ui:DeleteFileX sap2010:Annotation.AnnotationText="" DisplayName="Delete Previous Merge File" sap:VirtualizedContainerService.HintSize="418,144.66666666666666" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="Merged.xlsx">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -257,7 +257,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:DeleteFileX>
-    <ui:InputDialog Options="{x:Null}" DisplayName="Prompt user to choose between Excel to CSV or CSV to Excel using an Input Dialog" sap:VirtualizedContainerService.HintSize="674,332.6666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Merge CSV/Excel Files and Convert It" OptionsString="Excel to CSV;CSV to Excel" Title="Choose Conversion Type">
+    <ui:InputDialog Options="{x:Null}" DisplayName="Choose between Excel to CSV or CSV to Excel using an Input Dialog" sap:VirtualizedContainerService.HintSize="418,332.6666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Merge CSV/Excel Files and Convert It" OptionsString="Excel to CSV;CSV to Excel" Title="Choose Conversion Type">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[Choice]</OutArgument>
       </ui:InputDialog.Result>
@@ -267,9 +267,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InputDialog>
-    <Switch x:TypeArguments="x:String" DisplayName="Switch based on user input" Expression="[Choice]" sap:VirtualizedContainerService.HintSize="674,2390.6666666666665" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+    <Switch x:TypeArguments="x:String" DisplayName="Switch based on user input" Expression="[Choice]" sap:VirtualizedContainerService.HintSize="418,832" sap2010:WorkflowViewState.IdRef="Switch`1_1">
       <Switch.Default>
-        <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="672,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_43">
+        <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_43">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -283,14 +283,14 @@
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence x:Key="Excel to CSV" DisplayName="Body" sap:VirtualizedContainerService.HintSize="672,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_40">
+      <Sequence x:Key="Excel to CSV" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,280" sap2010:WorkflowViewState.IdRef="Sequence_40">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:SelectFolder DisplayName="Browse For Folder" sap:VirtualizedContainerService.HintSize="638,57.333333333333336" sap2010:WorkflowViewState.IdRef="SelectFolder_2" SelectedFolder="[inputFolder]">
+        <ui:SelectFolder DisplayName="Browse For Folder" sap:VirtualizedContainerService.HintSize="382,57.333333333333336" sap2010:WorkflowViewState.IdRef="SelectFolder_2" SelectedFolder="[inputFolder]">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -298,7 +298,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:SelectFolder>
-        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="638,57.333333333333336" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="Excel">
+        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="382,57.333333333333336" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="Excel">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -306,7 +306,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:KillProcess>
-        <Delay Duration="00:00:00.1000000" sap:VirtualizedContainerService.HintSize="638,57.333333333333336" sap2010:WorkflowViewState.IdRef="Delay_3">
+        <Delay Duration="00:00:00.1000000" sap:VirtualizedContainerService.HintSize="382,57.333333333333336" sap2010:WorkflowViewState.IdRef="Delay_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -314,20 +314,20 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </Delay>
-        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" sap2010:Annotation.AnnotationText="" DisplayName="Use Sales Results Excel File" sap:VirtualizedContainerService.HintSize="638,78.66666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_18" ResizeWindow="None" SensitivityOperation="None" TemplatePath="SalesResults-2023-01-06.xlsx" WorkbookPath="Merged.xlsx">
+        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel to CSV" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_18" ResizeWindow="None" SensitivityOperation="None" TemplatePath="SalesResults-2023-01-06.xlsx" WorkbookPath="Merged.xlsx">
           <ueab:ExcelApplicationCard.Body>
             <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="MergedExcel" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,1778.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_49">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,509.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_49">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ueab:WriteCellX Cell="[MergedExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Item Header Cell" sap:VirtualizedContainerService.HintSize="570,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_16" Value="[&quot;profile_pic&quot;]">
+                <ueab:WriteCellX Cell="[MergedExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Header" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_16" Value="[&quot;profile_pic&quot;]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -335,7 +335,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ueab:WriteCellX>
-                <ueab:WriteCellX Cell="[MergedExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Unit Price Header Cell" sap:VirtualizedContainerService.HintSize="570,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_15" Value="[&quot;username&quot;]">
+                <ueab:WriteCellX Cell="[MergedExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Header" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_15" Value="[&quot;username&quot;]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -343,7 +343,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ueab:WriteCellX>
-                <ueab:WriteCellX Cell="[MergedExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;C1&quot;)]" DisplayName="Write Items Sold Header Cell" sap:VirtualizedContainerService.HintSize="570,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_17" Value="[&quot;date&quot;]">
+                <ueab:WriteCellX Cell="[MergedExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;C1&quot;)]" DisplayName="Write Header" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_17" Value="[&quot;date&quot;]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -351,7 +351,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ueab:WriteCellX>
-                <ueab:WriteCellX Cell="[MergedExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="570,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_18" Value="[&quot;comment&quot;]">
+                <ueab:WriteCellX Cell="[MergedExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Header" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_18" Value="[&quot;comment&quot;]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -359,7 +359,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ueab:WriteCellX>
-                <ueab:FormatRangeX DisplayName="Format Header Cells" sap:VirtualizedContainerService.HintSize="570,57.333333333333336" sap2010:WorkflowViewState.IdRef="FormatRangeX_3" Range="[MergedExcel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:D1&quot;)]">
+                <ueab:FormatRangeX DisplayName="Format Header Cells" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="FormatRangeX_3" Range="[MergedExcel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:D1&quot;)]">
                   <ueab:FormatRangeX.Alignment>
                     <ui:AlignmentOptions HorizontalAlignment="xlHAlignGeneral" VerticalAlignment="xlVAlignBottom" WrapText="False" />
                   </ueab:FormatRangeX.Alignment>
@@ -376,7 +376,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ueab:FormatRangeX>
-                <ui:ForEachFileX sap2010:Annotation.AnnotationText="Gets the data from individual reports and adds it to the Sales Results report." DisplayName="For Each Excel File in Daily Reports Folder" Folder="[inputFolder]" sap:VirtualizedContainerService.HintSize="570,1028" sap2010:WorkflowViewState.IdRef="ForEachFileX_6" IncludeSubDirectories="False" OrderBy="CreationDateOldFirst" SkipFolderWithoutPermission="False">
+                <ui:ForEachFileX DisplayName="For Each Excel File in Folder" Filter="*.xlsx" Folder="[inputFolder]" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="ForEachFileX_6" IncludeSubDirectories="False" OrderBy="CreationDateOldFirst" SkipFolderWithoutPermission="False">
                   <ui:ForEachFileX.Body>
                     <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                       <ActivityAction.Argument1>
@@ -385,30 +385,29 @@
                       <ActivityAction.Argument2>
                         <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                       </ActivityAction.Argument2>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,695.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,664.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_50">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Daily Report Excel File" sap:VirtualizedContainerService.HintSize="502,635.3333333333334" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_19" ResizeWindow="None" SensitivityOperation="None" TemplatePath="SalesResults-2023-01-06.xlsx" WorkbookPath="[CurrentFile.Fullname]">
+                        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Open Each File" sap:VirtualizedContainerService.HintSize="502,604.6666666666666" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_19" ResizeWindow="None" SensitivityOperation="None" TemplatePath="SalesResults-2023-01-06.xlsx" WorkbookPath="[CurrentFile.Fullname]">
                           <ueab:ExcelApplicationCard.Body>
                             <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="SourceExcel" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,332" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,301.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_51">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ueab:AppendRangeX StartingColumnName="{x:Null}" sap2010:Annotation.AnnotationText="Adds data from the daily report to the Sales Results report." DestinationHasHeaders="True" DestinationRange="[MergedExcel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Append Sales Results Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,272" sap2010:WorkflowViewState.IdRef="AppendRangeX_3" PasteOptions="Values" SourceRange="[SourceExcel.Sheet(&quot;Sheet1&quot;)]" Transpose="False">
+                                <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="True" DestinationRange="[MergedExcel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,241.33333333333334" sap2010:WorkflowViewState.IdRef="AppendRangeX_3" PasteOptions="Values" SourceRange="[SourceExcel.Sheet(&quot;Sheet1&quot;)]" Transpose="False">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
@@ -427,23 +426,24 @@
                   </ui:ForEachFileX.Body>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:ForEachFileX>
-                <ueab:SaveExcelFileAsX DisplayName="Save Excel File As" FilePath="[inputFolder + &quot;\Merged.xlsx&quot;]" sap:VirtualizedContainerService.HintSize="570,245.33333333333334" sap2010:WorkflowViewState.IdRef="SaveExcelFileAsX_6" SaveAsFileType="OpenXmlWorkbook" Workbook="[MergedExcel]">
+                <ueab:SaveExcelFileAsX DisplayName="Save Excel File As" FilePath="[inputFolder + &quot;\Merged.xlsx&quot;]" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="SaveExcelFileAsX_6" SaveAsFileType="OpenXmlWorkbook" Workbook="[MergedExcel]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ueab:SaveExcelFileAsX>
-                <ueab:ExportExcelToCsvX DisplayName="Export to CSV" FilePath="[inputFolder + &quot;\Merged.csv&quot;]" sap:VirtualizedContainerService.HintSize="570,158.66666666666666" sap2010:WorkflowViewState.IdRef="ExportExcelToCsvX_4" TargetRange="[MergedExcel.Sheet(&quot;Sheet1&quot;)]">
+                <ueab:ExportExcelToCsvX DisplayName="Export to CSV" FilePath="[inputFolder + &quot;\Merged.csv&quot;]" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="ExportExcelToCsvX_4" TargetRange="[MergedExcel.Sheet(&quot;Sheet1&quot;)]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ueab:ExportExcelToCsvX>
@@ -452,21 +452,20 @@
           </ueab:ExcelApplicationCard.Body>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ueab:ExcelApplicationCard>
       </Sequence>
-      <Sequence x:Key="CSV to Excel" DisplayName="Body" sap:VirtualizedContainerService.HintSize="672,2093.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_42">
+      <Sequence x:Key="CSV to Excel" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,280" sap2010:WorkflowViewState.IdRef="Sequence_42">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:SelectFolder DisplayName="Browse For Folder" sap:VirtualizedContainerService.HintSize="638,57.333333333333336" sap2010:WorkflowViewState.IdRef="SelectFolder_1" SelectedFolder="[inputFolder]">
+        <ui:SelectFolder DisplayName="Browse For Folder" sap:VirtualizedContainerService.HintSize="382,57.333333333333336" sap2010:WorkflowViewState.IdRef="SelectFolder_1" SelectedFolder="[inputFolder]">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -474,26 +473,42 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:SelectFolder>
-        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="638,1976" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="382,57.333333333333336" sap2010:WorkflowViewState.IdRef="KillProcess_4" ProcessName="Excel">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:KillProcess>
+        <Delay Duration="00:00:00.1000000" sap:VirtualizedContainerService.HintSize="382,57.333333333333336" sap2010:WorkflowViewState.IdRef="Delay_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Delay>
+        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="CSV to Excel" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
           <ueab:ExcelProcessScopeX.Body>
             <ActivityAction x:TypeArguments="ui:IExcelProcess">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,1866" sap2010:WorkflowViewState.IdRef="Sequence_48">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,903.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_48">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" sap2010:Annotation.AnnotationText="Merges CSV and export it to both Excel and CSV" DisplayName="CSV to Excel" sap:VirtualizedContainerService.HintSize="570,1806" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_15" ResizeWindow="None" SensitivityOperation="None" TemplatePath="SalesResults-2023-01-06.xlsx" WorkbookPath="Merged.xlsx">
+                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" sap2010:Annotation.AnnotationText="Merges CSV and export it to both Excel and CSV" DisplayName="CSV to Excel" sap:VirtualizedContainerService.HintSize="484,843.3333333333334" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_15" ResizeWindow="None" SensitivityOperation="None" TemplatePath="SalesResults-2023-01-06.xlsx" WorkbookPath="Merged.xlsx">
                   <ueab:ExcelApplicationCard.Body>
                     <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="MergedCSV" />
                       </ActivityAction.Argument>
-                      <Sequence sap:VirtualizedContainerService.HintSize="536,1472" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                      <Sequence sap:VirtualizedContainerService.HintSize="450,509.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_44">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="sd:DataTable" Name="csv_" />
                         </Sequence.Variables>
@@ -503,7 +518,7 @@
                             <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ueab:WriteCellX Cell="[MergedCSV.Sheet(&quot;Sheet1&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Item Header Cell" sap:VirtualizedContainerService.HintSize="502,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_19" Value="[&quot;profile_pic&quot;]">
+                        <ueab:WriteCellX Cell="[MergedCSV.Sheet(&quot;Sheet1&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Header" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_19" Value="[&quot;profile_pic&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -511,7 +526,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ueab:WriteCellX>
-                        <ueab:WriteCellX Cell="[MergedCSV.Sheet(&quot;Sheet1&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Unit Price Header Cell" sap:VirtualizedContainerService.HintSize="502,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_20" Value="[&quot;username&quot;]">
+                        <ueab:WriteCellX Cell="[MergedCSV.Sheet(&quot;Sheet1&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Header" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_20" Value="[&quot;username&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -519,7 +534,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ueab:WriteCellX>
-                        <ueab:WriteCellX Cell="[MergedCSV.Sheet(&quot;Sheet1&quot;).Cell(&quot;C1&quot;)]" DisplayName="Write Items Sold Header Cell" sap:VirtualizedContainerService.HintSize="502,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_21" Value="[&quot;date&quot;]">
+                        <ueab:WriteCellX Cell="[MergedCSV.Sheet(&quot;Sheet1&quot;).Cell(&quot;C1&quot;)]" DisplayName="Write Header" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_21" Value="[&quot;date&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -527,7 +542,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ueab:WriteCellX>
-                        <ueab:WriteCellX Cell="[MergedCSV.Sheet(&quot;Sheet1&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="502,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_22" Value="[&quot;comment&quot;]">
+                        <ueab:WriteCellX Cell="[MergedCSV.Sheet(&quot;Sheet1&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Header" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_22" Value="[&quot;comment&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -535,7 +550,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ueab:WriteCellX>
-                        <ueab:FormatRangeX DisplayName="Format Header Cells" sap:VirtualizedContainerService.HintSize="502,57.333333333333336" sap2010:WorkflowViewState.IdRef="FormatRangeX_4" Range="[MergedCSV.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:D1&quot;)]">
+                        <ueab:FormatRangeX DisplayName="Format Header Cells" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="FormatRangeX_4" Range="[MergedCSV.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:D1&quot;)]">
                           <ueab:FormatRangeX.Alignment>
                             <ui:AlignmentOptions HorizontalAlignment="xlHAlignGeneral" VerticalAlignment="xlVAlignBottom" WrapText="False" />
                           </ueab:FormatRangeX.Alignment>
@@ -552,7 +567,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ueab:FormatRangeX>
-                        <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[inputFolder]" sap:VirtualizedContainerService.HintSize="502,721.3333333333334" sap2010:WorkflowViewState.IdRef="ForEachFileX_5" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                        <ui:ForEachFileX DisplayName="For Each CSV File in Folder" Filter="*.csv" Folder="[inputFolder]" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="ForEachFileX_5" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                           <ui:ForEachFileX.Body>
                             <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                               <ActivityAction.Argument1>
@@ -561,11 +576,11 @@
                               <ActivityAction.Argument2>
                                 <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                               </ActivityAction.Argument2>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,419.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_46">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[csv_]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" FilePath="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="434,172" sap2010:WorkflowViewState.IdRef="ReadCsvFile_4">
@@ -587,22 +602,24 @@
                           </ui:ForEachFileX.Body>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:ForEachFileX>
-                        <ueab:SaveExcelFileAsX DisplayName="Save Excel File As" FilePath="[inputFolder + &quot;\Merged.xlsx&quot;]" sap:VirtualizedContainerService.HintSize="502,245.33333333333334" sap2010:WorkflowViewState.IdRef="SaveExcelFileAsX_5" SaveAsFileType="OpenXmlWorkbook" Workbook="[MergedCSV]">
+                        <ueab:SaveExcelFileAsX DisplayName="Save Excel File As" FilePath="[inputFolder + &quot;\Merged.xlsx&quot;]" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="SaveExcelFileAsX_5" SaveAsFileType="OpenXmlWorkbook" Workbook="[MergedCSV]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ueab:SaveExcelFileAsX>
-                        <ueab:ExportExcelToCsvX DisplayName="Export to CSV" FilePath="[inputFolder + &quot;\Merged.csv&quot;]" sap:VirtualizedContainerService.HintSize="502,158.66666666666666" sap2010:WorkflowViewState.IdRef="ExportExcelToCsvX_5" TargetRange="[MergedCSV.Sheet(&quot;Sheet1&quot;)]">
+                        <ueab:ExportExcelToCsvX DisplayName="Export to CSV" FilePath="[inputFolder + &quot;\Merged.csv&quot;]" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="ExportExcelToCsvX_5" TargetRange="[MergedCSV.Sheet(&quot;Sheet1&quot;)]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ueab:ExportExcelToCsvX>
@@ -622,8 +639,8 @@
           </ueab:ExcelProcessScopeX.Body>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsPinned">True</x:Boolean>
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ueab:ExcelProcessScopeX>
