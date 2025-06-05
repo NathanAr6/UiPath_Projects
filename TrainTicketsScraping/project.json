@@ -1,0 +1,63 @@
+{
+  "name": "TrainTicketsScraping",
+  "projectId": "7ca1b58d-fb33-4e3b-b9d7-b02e67ddc405",
+  "description": "Scrape Train Ticket from Traveloka",
+  "main": "Main.xaml",
+  "dependencies": {
+    "AdvancedConversion.Activities": "[1.0.1]",
+    "System.Activities.ViewModels": "[1.0.0-20250124.2]",
+    "UiPath.Excel.Activities": "[2.25.1-preview]",
+    "UiPath.MicrosoftOffice365.Activities": "[3.0.11]",
+    "UiPath.System.Activities": "25.2.4",
+    "UiPath.UIAutomation.Activities": "[25.2.1-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.161.0",
+  "projectVersion": "1.0.7",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "7a4e58df-28a0-4e53-9a91-1986395a3638",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
